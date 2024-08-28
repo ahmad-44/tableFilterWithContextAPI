@@ -1,23 +1,7 @@
-import { useEffect } from "react";
-import useTableFilter from "../context/TableFilter";
+import useTableFilter from "../context/TableFilter.js";
 function Filter() {
   const { regNo, name, switchRegNo, switchName } = useTableFilter();
-  //   const [regNo, setRegNo] = useState(false);
-  //   const [name, setName] = useState(false);
 
-  //   const switchRegNo = () => {
-  //     setRegNo(!regNo);
-  //   };
-  //   const switchName = () => {
-  //     setName(!name);
-  //   };
-
-  //   useEffect(() => {
-  //     console.log(regNo);
-  //   }, [regNo]);
-  useEffect(() => {
-    console.log(regNo);
-  });
   return (
     <>
       <form>
