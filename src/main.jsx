@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
+import TableFilterProvider from "./components/TableFilterProvider";
 
 import {
   Route,
@@ -22,7 +23,9 @@ const router = createBrowserRouter(
 );
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* <App /> */}
-    <RouterProvider router={router} />
+    <TableFilterProvider>
+      {/* <App /> */}
+      <RouterProvider router={router} />
+    </TableFilterProvider>
   </StrictMode>
 );
