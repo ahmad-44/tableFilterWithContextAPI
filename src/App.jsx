@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Filter from "./components/filter";
+import Filter from "./components/Filter";
 import Table from "./components/Table";
 import { TableFilterProvider } from "./context/TableFilter.js";
 
